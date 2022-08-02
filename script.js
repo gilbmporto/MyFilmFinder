@@ -75,9 +75,6 @@ const showRandomMovie = async () => {
         displayMovie(info);
 };
 
-//Let's get it started here:
-getGenres().then(populateGenreDropdown);
-playBtn.onclick = showRandomMovie;
 
 //Helper Functions:
 
@@ -182,3 +179,7 @@ const displayMovie = (movieInfo) => {
     likeBtn.onclick = likeMovie;
     dislikeBtn.onclick = dislikeMovie;
 };
+
+//Let's get it started here:
+getGenres().then(populateGenreDropdown);
+playBtn.onclick = showRandomMovie;
